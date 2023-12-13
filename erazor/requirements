@@ -1,0 +1,6 @@
+scrapy==2.7.0
+scrapy_redis==0.7.3
+pydantic=2.4.2
+apscheduler
+redis
+pyyaml

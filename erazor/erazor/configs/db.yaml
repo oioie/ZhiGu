@@ -1,0 +1,13 @@
+redis:
+  redis_host: 192.168.110.200
+  redis_port: 6379
+  redis_password: None
+  redis_user: None
+  redis_db: 1
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: 123456
+  db: scrape

@@ -1,0 +1,40 @@
+-
+  path: erazor.spiders.post.
+  worker_num: 5
+  email: 1691372765@qq.com
+  feed_id: abc987654321
+  max_ack_time: 7200
+  max_retry_time: 15
+  awaken_cron_expression: '0/1 * * * *'
+  save_table: reddit_post
+  mode: STRICT
+  queue_prioritys: [0,1]
+  save_model: GoogleShopList
+
+-
+  path: erazor.spiders.googleShop.GoogleShopSpider
+  worker_numbers: 5
+  email: 1691372765@qq.com
+  feed_id: abc12345678
+  max_ack_time: 7200
+  max_retry_time: 15
+  awaken_cron_expression: '0/1 * * * *'
+  model: erazor.spiders.models.
+  save_table: google_shop
+  mode: STRICT
+  queue_prioritys: [0,1]
+  save_model: GoogleShopList
+
+-
+  path: erazor.spiders.post.PostsSpider
+  worker_numbers: 5
+  email: 1691372765@qq.com
+  feed_id: abc987654321
+  max_ack_time: 7200
+  max_retry_time: 15
+  awaken_cron_expression: '0/1 * * * *'
+  model: PostListModel
+  save_table: google_shop
+  mode: STRICT
+  queue_prioritys: [0,1]
+  save_model: GoogleShopList
